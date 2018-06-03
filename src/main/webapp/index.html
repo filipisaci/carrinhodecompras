@@ -42,44 +42,50 @@
 					<input ng-model="vm.registro.preco" type="number" class="form-control" id="preco">
 				  </div>
 
-				  <div class="form-group col-md-3 btn-salvar">
-				  	<button ng-click="vm.salvar()" type="button" class="btn btn-primary btn-lg btn-block">Salvar Item</button>
+				  <div class="form-group col-md-1 btn-salvar">
+				  	<button ng-click="vm.salvar()" type="button" class="btn btn-primary btn-lg btn-block">Salvar</button>
 					</div>
 				</div>
+				<div class="form-group col-md-1 btn-salvar">
+					<button ng-click="vm.cancelar()" type="button" class="btn btn-primary btn-lg btn-block">Cancelar</button>
+				  </div>
+			  </div>
 		</div>
 		
 		<div class="container text-center">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Descrição</th>
+						<th>Quantidade</th>
+						<th>Preço</th>
+						<th>Total</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in vm.registros | orderBy:'id'">
+						<td>{{item.id}}</td>
+						<td>{{item.descricao}}</td>
+						<td>{{item.quantidade}}</td>
+						<td>{{item.preco}}</td>
+						<td>{{item.total}}</td>
+						<td><a href="" ng-click="vm.editar(item)">[Editar]</a></td>
+						<td><a href="" ng-click="vm.excluir(item)">[Excluir]</a></td>
+					</tr>
+				</tbody>
+			</table>
 
-			<div class="col-md-5 col-sm-12">
-				<div class="bigcart"></div>
-				<h1>Seu Carrinho de Compras</h1>
-			</div>
-			
-			<div class="col-md-7 col-sm-12 text-left">
-				<ul>
-					<li class="row list-inline columnCaptions">
-						<span>QTY</span>
-						<span>ITEM</span>
-						<span>Price</span>
-					</li>
-					<li class="row" ng-repeat="produto in vm.registros | orderBy:'id'">
-						<span class="quantity">1</span>
-						<span class="itemName">Birthday Cake</span>
-						<span class="popbtn"><a class="arrow"></a></span>
-						<span class="price">$49.95</span>
-					</li>
-			
-				</ul>
-			</div>
+			<ul>
+				<li>
+					<span class="sum">Total:</span>
+					<span class="sum">R$ {{vm.total | number: 2}}</span>
+				</li>
+			</ul>
 		</div>
 		
-		<!-- The popover content -->
-
-		<div id="popover" style="display: none">
-			<a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
-			<a href="#"><span class="glyphicon glyphicon-remove"></span></a>
-		</div>
-
 		<!-- JavaScript includes -->
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
 		<script src="assets/js/angular.js"></script>

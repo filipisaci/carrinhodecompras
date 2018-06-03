@@ -33,6 +33,10 @@
             vm.registro = angular.copy(item); 
         };
 
+        vm.cancelar = function cancelar() {
+            vm.registro = {}; 
+        };
+
         vm.excluir = function(item) {
             ProdutoService.remove(item.id)
             .then(function () {

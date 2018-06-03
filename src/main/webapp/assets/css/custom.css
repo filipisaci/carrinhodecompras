@@ -87,119 +87,17 @@ a:hover {
 }
 
 /*-----------------------------------  
-	Logo and description 
------------------------------------ */
-
-
-.col-md-5.col-sm-12{
-	padding: 0;
-}
-
-.col-md-5.col-sm-12 h1{
-	color: #595c5f;
-	font-size: 24px;
-	font-weight: bold;
-	margin-bottom:30px;
-	text-align: left;
-}
-
-.col-md-5.col-sm-12 p{
-	color: #898e92;
-	line-height: 1.5;
-	max-width: 400px;
-	text-align: justify;
-}
-
-.bigcart{
-	background:url(../images/sprite.png);
-	background-position: 0px 11px;
-	background-repeat:no-repeat;
-	width: 155px;
-	height: 120px;
-	margin:0 0 40px 60px;
-}
-
-
-/*-----------------------------------  
 	Cart items list
 -----------------------------------*/
 
-.col-md-7.col-sm-12{
-	padding-left: 50px ;
-	margin-bottom: 72px;
-}
-
-.row{
-	box-shadow: 0 1px 0 #e1e5e8;
-	padding-bottom :0;
-	padding-left: 15px;
-	background-color: #ffffff;
-	margin-bottom: 11px;
-}
-
-.row span{
-	padding: 20px 0 6px 0;
-}
-
-/* Column Captions */
-
-.columnCaptions{
-	color: #7e93a7;
-	font-size:12px;
-	text-transform: uppercase;
-	padding: 0;
-	box-shadow: 0 0 0;
-	background-color: #f2f6f9;
-}
-
-.columnCaptions span:first-child{
-	padding-left:8px;
-}
-
-.columnCaptions span{
-	padding: 0 21px 0 0;
-}
-
-.columnCaptions span:last-child{
-	float: right;
-	padding-right: 72px;
-}
-
-
 /* Items */
 
-.itemName{	
-	color: #727578;
+.sum{	
+	color: #f06953;
 	font-size :16px;
 	font-weight: bold;
-	float: left;
 	padding-left:25px;
 }
-
-.price{
-	color: #f06953;
-	font-size :16px;
-	font-weight: bold;
-	float: right;
-	padding-right: 25px;
-}
-
-.itemTotal{
-	color: #f06953;
-	font-size :16px;
-	font-weight: bold;
-	float: right;
-}
-
-.quantity{	
-	color: #4ea6bc;
-	font-size :16px;
-	font-weight: bold;
-	float : left;
-	width: 42px;
-	padding-left: 7px;
-}
-
 
 
 .popbtn{
@@ -218,73 +116,6 @@ a:hover {
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-top: 6px solid #858e97;
-}
-
-/* Totals */
-
-.totals{
-	background-color: #f2f6f9;
-}
-
-.totals span{
-	padding: 40px 15px 40px 0;
-}
-
-.totals .price{
-	float: left;
-}
-
-.totals .itemTotal{
-	float: left;
-}
-
-.totals .itemName{
-	margin-top: 1px;
-}
-
-.totals .itemAdd{
-	float: right;
-	padding: 0;
-	margin-top: 40px; 
-	padding-left: 5px;
-	cursor: pointer;
-}
-
-.itemAdd a{
-	background-color: #4ea6bc;
-	color: #fbfffa;
-	font-weight: bold;
-	border-radius: 2px;
-	padding: 20px 30px;
-}
-
-/* Popovers */
-
-.popover{
-	border-radius: 3px;
-	box-shadow: 0 0 1px 1px rgba(0,0,0,0.2);
-	border: 0;
-	background-color: #ffffff;
-}
-
-.popover.bottom{
-	margin-top: -9px;
-}
-
-.glyphicon{
-	width: 24px;
-	font-size: 24px;
-	padding: 0;
-}
-
-.glyphicon-pencil{
-	color: #858e97;
-	margin: 7px 12px 7px 10px;
-}
-
-.glyphicon-remove{
-	color: #f06953;
-	margin-right: 10px;
 }
 
 /*-----------------------------------  
@@ -418,5 +249,12 @@ a:hover {
 	.popover.bottom{
 		margin-top: 7px;
 		margin-left: -40px;
+	}
+
+	.row span{
+		margin-top: 10px;
+		color: #f06953;
+		font-size :16px;
+		font-weight: bold;
 	}
 }
