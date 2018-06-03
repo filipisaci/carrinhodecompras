@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/carrinhodecompras.war
+web:    java -Xms384m -Xmx384m -Xss512k -XX:NewRatio=2 -XX:SurvivorRatio=4 -XX:+UseSerialGC -XX:+UseCompressedOops -Dswarm.http.port=$PORT -jar target/carrinhodecompras-swarm.jar
