@@ -9,28 +9,28 @@
     function ProdutoService($http) {
 
         function findAll() {
-            return $http.get('http://localhost:8090/api/produtos')
+            return $http.get('https://carrinhodecompra10.herokuapp.com/api/produtos')
               .then(function(response) {
                 return response.data;
               });
         }
 
         function insert(registro) {
-            return $http.post('http://localhost:8090/api/produtos', registro)
+            return $http.post('https://carrinhodecompra10.herokuapp.com/api/produtos', registro)
               .then(function (response) {
                   return response.data;
               });
         }
 
         function update(registro) {
-            return $http.put('http://localhost:8090/api/produtos/' + registro.id, registro)
+            return $http.put('https://carrinhodecompra10.herokuapp.com/api/produtos/' + registro.id, registro)
             .then(function (response) {
                 return response.data;
             });
         }
             
         function remove(id) {
-            return $http.delete('http://localhost:8090/api/produtos/' + id)
+            return $http.delete('https://carrinhodecompra10.herokuapp.com/api/produtos/' + id)
             .then(function (response) {
                 return response.data;
             });
