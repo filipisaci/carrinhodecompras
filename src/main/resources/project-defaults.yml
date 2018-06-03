@@ -3,7 +3,7 @@ swarm:
     data-sources:
       CarrinhoDS:
         driver-name: postgresql
-        connection-url: jdbc:postgresql://ec2-75-101-142-91.compute-1.amazonaws.com:5432/dfrurbmhhkvg5u
+        connection-url: jdbc:postgresql://ec2-75-101-142-91.compute-1.amazonaws.com:5432/dfrurbmhhkvg5u?sslmode=require
         user-name: jvxrjcuhjqytto
         password: 2318f42931d01ecbbd8d03aaaa23040036caac95c3a9a43530627b9fc93256fb
         valid-connection-checker-class-name: org.jboss.jca.adapters.jdbc.extensions.postgres.PostgreSQLValidConnectionChecker

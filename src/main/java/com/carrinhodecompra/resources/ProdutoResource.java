@@ -38,7 +38,7 @@ public class ProdutoResource {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         if (!id.equals(produto.getId())) {
-            throw new BadRequestException("ID do cliente difere do ID da URL");
+            throw new BadRequestException("ID do produto difere do ID da URL");
         }
         return Response.ok(service.update(produto)).build();
     }
