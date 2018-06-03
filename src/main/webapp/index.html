@@ -70,8 +70,8 @@
 						<td>{{item.id}}</td>
 						<td>{{item.descricao}}</td>
 						<td>{{item.quantidade}}</td>
-						<td>{{item.preco}}</td>
-						<td>{{item.total}}</td>
+						<td>{{item.preco | number: 2}}</td>
+						<td>{{item.total | number: 2}}</td>
 						<td><a href="" ng-click="vm.editar(item)">[Editar]</a></td>
 						<td><a href="" ng-click="vm.excluir(item)">[Excluir]</a></td>
 					</tr>
